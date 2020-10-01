@@ -18,16 +18,34 @@ public class Ex2_Sentence_Backward {
 
     public static void main(String[] args) {
         String sentence = getUserInput();
-        String result = "";
+        String result1 = "", result2 = "", result3 = "";
 
+        //a.
         String [] words = sentence.split(" ");
 
         for (int i= words.length-1; i>=0; i--){
 
-            result += words[i] + " ";
+            result1 += words[i] + " ";
+
+            if (words[i].length()%2==0){
+
+                result2 += words[i] + " ";
+            }
+
+            if (words[i].endsWith("a")){
+
+                result3 += words[i] + " ";
+            }
 
         }
 
-        System.out.printf("Your sentence in backward:\n" + result);
+        //a.
+        System.out.println("Your sentence in backward:\n" + result1);
+
+        //b.
+        System.out.println("Words with even number of letters:\n" + result2);
+
+        //c.
+        System.out.println("Words that end with a:\n" + result3);
+        }
     }
-}
