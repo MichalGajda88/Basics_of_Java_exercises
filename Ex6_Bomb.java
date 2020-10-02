@@ -3,9 +3,9 @@ package pl.fablab.java.zadania.moje;
 import java.util.Scanner;
 
 public class Ex6_Bomb {
-//    6. Napisz program, który pobierze od użytkownika całkowitą liczbę dodatnią. Następnie
-//    wyświetl na ekranie Odliczanie z tekstem "Bomba wybuchnie za ... " gdzie w miejsce
-//    dwukropka mają się pojawić liczby od podanej przez użytkownika do 0.
+    //6. Write a program that will take a positive integer from the user. Next
+    // display the countdown on the screen with the text "The bomb will explode in ..." where to place
+    // colon numbers from user specified to 0 should appear.
 
     public static int getUserInput() {
 
